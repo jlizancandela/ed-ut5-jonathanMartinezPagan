@@ -25,7 +25,7 @@ public class edUt5JonathanMartinez {
             System.out.printf("Fecha ok %d/%d\n",numDias,mes);
         }
         else {
-            System.out.print("Fecha incorrecta ");
+            System.out.println("Fecha incorrecta");
         }
 
 
