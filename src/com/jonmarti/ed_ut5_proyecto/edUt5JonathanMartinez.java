@@ -19,6 +19,19 @@ public class edUt5JonathanMartinez {
 
         boolean fecha = false; // Se verifica si fecha correcta
 
+        fecha = isFecha(mes, numDias, fecha);
+        // Imprime en pantalla resultado
+        if (fecha) {
+            System.out.printf("Fecha ok %d/%d\n",numDias,mes);
+        }
+        else {
+            System.out.print("Fecha incorrecta ");
+        }
+
+
+    }
+
+    private static boolean isFecha(int mes, int numDias, boolean fecha) {
         if (mes >= 1 && mes <= 12) {
             switch (mes) { //iniciamos la instruccion switch para múltiples alternativas
                 case 4: case 6: case 9: case 11: // Asignamos los meses de 30 días
@@ -38,14 +51,6 @@ public class edUt5JonathanMartinez {
                     break;
             }
         }
-        // Imprime en pantalla resultado
-        if (fecha) {
-            System.out.print("Fecha OK: " + numDias + "/" + mes);
-        }
-        else {
-            System.out.print("Fecha incorrecta ");
-        }
-
-
+        return fecha;
     }
 }
